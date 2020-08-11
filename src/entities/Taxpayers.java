@@ -31,7 +31,7 @@ public class Taxpayers extends Contributors{
 			tax = super.getIncome() * 0.25;
 		}
 		if(healthSpending > 0) {
-			tax += healthSpending * 0.5;
+			tax -= healthSpending * 0.5;
 		}
 		return tax;
 	}
