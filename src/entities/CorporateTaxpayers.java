@@ -24,10 +24,10 @@ public class CorporateTaxpayers extends Contributors {
 	public double taxCalc() {
 		double tax = 0;
 		if(numberOfEmployees <= 10) {
-			tax = super.getIncome() * 0.16;
+			tax = getIncome() * 0.16;
 		}
 		else {
-			tax = super.getIncome() * 0.14;
+			tax = getIncome() * 0.14;
 		}
 		return tax;
 	}

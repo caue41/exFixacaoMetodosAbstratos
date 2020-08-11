@@ -24,11 +24,11 @@ public class Taxpayers extends Contributors{
 	@Override
 	public double taxCalc() {
 		double tax = 0;
-		if(super.getIncome() <= 20000.0) {
-			tax = super.getIncome() * 0.15;
+		if(getIncome() <= 20000.0) {
+			tax = getIncome() * 0.15;
 		}
 		else {
-			tax = super.getIncome() * 0.25;
+			tax = getIncome() * 0.25;
 		}
 		if(healthSpending > 0) {
 			tax -= healthSpending * 0.5;
