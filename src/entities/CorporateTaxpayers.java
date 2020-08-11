@@ -7,17 +7,17 @@ public class CorporateTaxpayers extends Contributors {
 	public CorporateTaxpayers() {
 	}
 
-	public CorporateTaxpayers(String name, Double income, Integer numerOfEmployees) {
+	public CorporateTaxpayers(String name, Double income, Integer numberOfEmployees) {
 		super(name, income);
-		this.numberOfEmployees = numerOfEmployees;
+		this.numberOfEmployees = numberOfEmployees;
 	}
 
 	public Integer getNumerOfEmployees() {
 		return numberOfEmployees;
 	}
 
-	public void setNumerOfEmployees(Integer numerOfEmployees) {
-		this.numberOfEmployees = numerOfEmployees;
+	public void setNumerOfEmployees(Integer numberOfEmployees) {
+		this.numberOfEmployees = numberOfEmployees;
 	}
 	
 	@Override
